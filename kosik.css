@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    /* Prispôsobiť veľkosť písma a rozloženie na menšie obrazovky */
+    body {
+        font-size: 16px;
+    }
+
+    section.cart {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.summary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+body {
+    background-color: #dce8f1;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Štýly pre rozmiestnenie produktov a košíka */
+.wrapper {
+    display: flex;
+}
+
+.products {
+    flex: 1; /* Produkty budú zaberať 50% šírky */
+    border-right: 2px solid #cccccc; /* Čiara medzi produktmi a košíkom */
+    padding-right: 10px; /* Odsadenie oddeľovača */
+    margin-right: 10px; /* Odstup oddeľovača */
+}
+
+.cart {
+    flex: 1; /* Košík bude tiež zaberať 50% šírky */
+}
+
+/* Ďalšie štýly pre zobrazenie produktov a košíka */
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100px; /* Šírka obrázku */
+    height: auto;
+    margin-right: 10px; /* Odstup medzi obrázkom a údajmi */
+}
+
+.product-details {
+    flex: 1; /* Rozťahuje údaje na celú dostupnú šírku */
+}
+
+.products {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tienenie pre produkty */
+}
+
+.cart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tienenie pre košík */
+}
+
+.header {
+    background-color: #ffcc00;
+    padding: 20px;
+}

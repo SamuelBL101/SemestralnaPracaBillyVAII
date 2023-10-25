@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informačný systém pre výrobný závod</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+<header>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: blue;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">SalesCounter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Hľadať" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Hľadať</button>
+            </form>
+            <ul class="navbar-nav ms-auto"> <!-- Posunutie do prava pomocou ms-auto -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home fa-lg"></i> <!-- Zväčšená ikona domčeka -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pouzivatel.html">
+                        <i class="fas fa-user fa-lg"></i> <!-- Zväčšená ikona pre používateľa -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kosik.html">
+                        <i class="fas fa-shopping-cart fa-lg"></i> <!-- Zväčšená ikona pre košík -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel pre obrázky -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="data/img/img.png" alt="Obrázok 1" class="d-block w-100"> <!-- Nastavenie šírky na 100% -->
+        </div>
+        <div class="carousel-item">
+            <img src="data/img/img_1.png" alt="Obrázok 2" class="d-block w-100"> <!-- Nastavenie šírky na 100% -->
+        </div>
+        <div class="carousel-item">
+            <img src="data/img/img_2.png" alt="Obrázok 3" class="d-block w-100"> <!-- Nastavenie šírky na 100% -->
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Predošlý</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Ďalší</span>
+    </a>
+</div>
+<div class="row">
+<!-- Bocný panel pre kategórie -->
+<nav id="sidebar-categories" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+    <div class="position-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Elektronika
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Móda a oblečenie
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Zdravie a krása
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Domácnosť a záhrada
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Šport a outdoor
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Hračky a deti
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Cestovanie a outdoor
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#"> <!-- Trieda fs-5 pre zväčšenie textu -->
+                    Zvieratá a chovateľstvo
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Obsah stránky -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="products">
+            <div class="product">
+                <img src="data/img/produktyHLS/img.png" alt="Produkt 1" class="product-image">
+                <h3>Keramický hrnček so vzorom</h3>
+                <p>Cena: 5.99€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_1.png" alt="Produkt 2" class="product-image">
+                <h3>Kuchynske utierky (3 kusy)</h3>
+                <p>Cena: 3.49€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_2.png" alt="Produkt 3" class="product-image">
+                <h3>Drevená krabica na šperky</h3>
+                <p>Cena: 7.99€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_3.png" alt="Produkt 4" class="product-image">
+                <h3>Gélové pero s čiernym atramentom</h3>
+                <p>Cena: 1.99€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_4.png" alt="Produkt 5" class="product-image">
+                <h3>Biela keramická váza</h3>
+                <p>Cena: 4.49€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_5.png" alt="Produkt 6" class="product-image">
+                <h3>Ponožky (10 párov)</h3>
+                <p>Cena: 8.99€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+             <img src="data/img/produktyHLS/img_6.png" alt="Produkt 7" class="product-image">
+             <h3>Plážový slnečník</h3>
+             <p>Cena: 6.29€</p>
+             <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+            <div class="product">
+                <img src="data/img/produktyHLS/img_7.png" alt="Produkt 8" class="product-image">
+                <h3>Svietiaca LED sviečka</h3>
+                <p>Cena: 2.79€</p>
+                <button class="add-to-cart-button">Pridať do košíka</button>
+            </div>
+
+        <div class="product">
+            <img src="data/img/produktyHLS/img_8.png" alt="Produkt 9" class="product-image">
+            <h3>Malá taška s remienkom</h3>
+            <p>Cena: 9.49€</p>
+            <button class="add-to-cart-button">Pridať do košíka</button>
+        </div>
+</div>
+</main>
+
+</div>
+
+
+
+
+<footer>
+    <p>&copy; 2023 SalesCounter. Všetky práva vyhradené.</p>
+    <a href="index.html">Späť na začiatok</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
